@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio1</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <script src="Funcoes.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+</head>
+<body>
+    <main>
+        <form id="Formulario" onsubmit="Converter(); return false;">
+            <div id="Centralizar">
+                <label for="Conversão">Converter de KM/h para:</label>
+                <select id="Conversão" name="Conversão">
+                    <option value="ML">Milhas/h</option>
+                    <option value="CM">Centímetros/s</option>
+                    <option value="PP">Pes/s</option>
+                </select>
+                <input type="number" id="inputDistancia" placeholder="Digite em milhas">
+                <input type="number" id="Resultado" name="Resultado" disabled>
+                <div class="botoes">
+                    <button type="submit">Converter</button>
+                    <button type="button" onclick="Inverter()">Inverter</button>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

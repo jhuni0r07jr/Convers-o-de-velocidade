@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: open_sans;
+    src: url(Font_da_pagina/technasans-regular-webfont.woff);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: open_sans, Roboto, sans-serif;
+        background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: open_sans, sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 60%;
+    border: none;
+    display: flex;
+    padding: 20px;
+    max-width: 500px;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+#Centralizar {
+    gap: 15px;
+    width: 100%;
+    border: none;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.8); /* painel translúcido branco */
+    backdrop-filter: blur(10px); /* efeito fosco */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* leve sombra para destacar */
+}
+
+#Resultado{
+    border: none;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    background: rgb(138, 133, 133);
+}
+
+input, select {
+    border: 1px solid black;
+    width: 80%;
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 20px;
+}
+
+.botoes {
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px 20px;
+}
